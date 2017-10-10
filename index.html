@@ -29,7 +29,12 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<img class="img-responsive" src="img/featured.jpg" alt="Featured Image">
+				<picture>
+					<!-- Load differene images for optimize size of the download -->
+		            <source srcset="img/featured_medium.jpg" media="(max-width: 550px)" >
+		            <source srcset="img/featured_big.jpg" >
+					<img class="img-responsive" src="img/featured_big.jpg" alt="Featured Image">
+				</picture>
 			</div>
 		</div>
 
